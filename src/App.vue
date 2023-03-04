@@ -2,6 +2,7 @@
 <div>
   <app-header></app-header>
   <app-items></app-items>
+  <hr>
   <app-footer></app-footer>
 </div>
 </template>
@@ -24,6 +25,6 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
 </style>
