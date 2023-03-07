@@ -3,7 +3,7 @@
     <header>
       <h1>{{ title }}</h1>
     </header>
-    <h1>{{ category }}</h1>
+    <!-- <h1>{{ category }}</h1> -->
   </div>
 </template>
   
@@ -12,7 +12,7 @@ export default {
   data() {
     return {
       title: 'Shoppers Destination',
-      category: 'Women'
+      // category: 'Women'
     }
   }
 }
@@ -20,7 +20,7 @@ export default {
   
 <style scoped>
 header {
-  background: lightgreen;
+  background: lavender;
   padding: 10px;
 
 }

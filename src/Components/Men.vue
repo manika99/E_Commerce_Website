@@ -1,5 +1,6 @@
 <template>
     <div id="items">
+        <h2>{{category}}</h2>
         <ul>
             <li v-for="item in items" v-bind:key="item.name" v-on:click="item.show = !item.show">
                 <h2>{{item.name}}</h2>
@@ -11,16 +12,10 @@
     
 <script>
 export default {
+    props: ['items'],
     data() {
         return {
-            items: [
-                { name: 'Indian Wear', speciality: 'Fresh arrival || Sale', show: false },
-                { name: 'Western Wear', speciality: 'Fresh arrival || Sale', show: false },
-                { name: 'Accessories', speciality: 'Fresh arrival || Sale', show: false },
-                { name: 'Footwear', speciality: 'Fresh arrival || Sale', show: false },
-                { name: 'Handbags', speciality: 'Fresh arrival || Sale', show: false },
-                { name: 'Skincare', speciality: 'Fresh arrival || Sale', show: false }
-            ]
+           category:'Men'
 
         }
     }
@@ -49,4 +44,8 @@ li{
     border: 1px solid #222;
     margin: 10px;
 }
+h2 {
+    color: #222;
+    text-align: center;
+  }
 </style>
